@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +47,9 @@
       const container = document.getElementById("hiddenFields");
       container.innerHTML = "";
 
+      console.log("\n🚀 Final Submission Data:");
       for (const [key, value] of params.entries()) {
+        console.log(`${key}: ${value}`);
         const input = document.createElement("input");
         input.type = "hidden";
         input.name = key;
