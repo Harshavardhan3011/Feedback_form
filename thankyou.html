@@ -37,7 +37,21 @@
   <div class="thankyou-card">
     <h2>🎉 Thank You!</h2>
     <p>Your feedback has been submitted.<br>We truly appreciate your time.</p>
-    <a href="index.html" class="btn btn-home">Start Again</a>
+    <a href="index.html" class="btn btn-home" onclick="logRestart()">Start Again</a>
   </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      console.log("\n✅ Thank You Page Reached. Final Data Received:");
+      for (const [key, value] of params.entries()) {
+        console.log(`${key}: ${value}`);
+      }
+    });
+
+    function logRestart() {
+      console.log("🔄 User chose to restart the form.");
+    }
+  </script>
 </body>
 </html>
