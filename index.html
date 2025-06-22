@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,6 +73,12 @@
         alert("Please enter Name and Email.");
         return;
       }
+
+      console.log("Step 1 - Name:", name);
+      console.log("Step 1 - Email:", email);
+      console.log("Step 1 - Username:", username);
+      console.log("Step 1 - Age:", age);
+      console.log("Step 1 - Country:", country);
 
       const params = new URLSearchParams({ name, email, username, age, country });
       window.location.href = `next.html?${params.toString()}`;
