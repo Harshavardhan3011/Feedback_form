@@ -67,6 +67,9 @@
         return;
       }
 
+      console.log("Step 3 - Rating:", rating);
+      console.log("Step 3 - Comments:", comments);
+
       params.set("rating", rating);
       params.set("comments", comments);
       window.location.href = `next2.html?${params.toString()}`;
