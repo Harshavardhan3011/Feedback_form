@@ -27,5 +27,4 @@ A simple web-based feedback collection system that uses **HTML/CSS for UI**, **J
 
 ---
 
-## 📁 Project Structure
 
